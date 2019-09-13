@@ -22,7 +22,7 @@ exports.up = function (knex) {
             tbl.text('description');
             //a boolean that indicates if the task has been completed
             tbl.boolean('completed')
-                .defaultTo(0)
+                .defaultTo(false)
         })
 
         .createTable('tasks', tbl => {
